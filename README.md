@@ -17,22 +17,25 @@ I milled the PCB on my desktop CNC with a 60° V-bit. The resulting PCB looks li
 
 
 To press the chip onto the PCB the 3D printed chip holder is used.
+
 <img src="pics/IMAG2405.jpg" width="350">
+
 The chip should fit prefectly in the recess. At first the recess was slightly to large. I could have reprinted the holder with a smalle recess but roughing the inner walls of the recess with a knive solved the problem for me. Now the chip kind of klicks in.
+
 | Inserting Chip      | Chip Inserted  |
 |------------|-------------|
 | <img src="pics/IMAG2406.jpg" width="250">  | <img src="pics/IMAG2407.jpg" width="250">  | 
+
 Four bolts guarantee the alignment of chip and PCB. I use broken drill/mill bits from my CNC. Magnets in the holder and on the backside of the PCB apply slight pressure to ensure a reliable contact.
+
 <img src="pics/IMAG2408.jpg" width="350">
 
 When the chip is in place the bootloader is flashed.
+
 <img src="pics/IMAG2409.jpg" width="350">
 
 Here is the flashed chip ready to be used in the next project!
+
 <img src="pics/IMAG2411.jpg" width="350">
 
 
-
-| col 1      | col 2      |
-|------------|-------------|
-|  |  | 
