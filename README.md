@@ -6,7 +6,8 @@ This is a little project I built to be able to flash my ATMEGA328 SMD chips with
 
 I allways use the [Optiloader](https://github.com/WestfW/OptiLoader). To flash it to an out-of-factory chip you need to connect the RESET, MISO, MOSI & SCK pins. Additionally a crystal and +5V are required. I designed this simple shield for an Uno with the mentioned connections.
 
-![KiCad PCB](pics/PCB_Kicad.png)
+#![KiCad PCB](pics/PCB_Kicad.png)
+<img src="pics/PCB_Kicad.png" width="250"> 
 
 The used components are just a 10k pullup resistor for the RESET pin, a 16MHz crystal with two 22pF capacitors and a few pin headers.
 
@@ -27,3 +28,9 @@ When the chip is in place the bootloader is flashed.
 
 Here is the flashed chip ready to be used in the next project!
 ![Removing Flashed Chip](pics/IMAG2411.jpg)
+
+
+
+| col 1      | col 2      |
+|------------|-------------|
+|  |  | 
