@@ -1,0 +1,214 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R2 A1
+U 1 1 5EA30F82
+P 3000 3500
+F 0 "A1" H 3000 4681 50  0000 C CNN
+F 1 "Arduino_UNO_R2" H 3000 4590 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 3000 3500 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 5EA31F96
+P 6450 3300
+F 0 "U1" H 6450 1711 50  0000 C CNN
+F 1 "ATmega328P-AU" H 6450 1620 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6450 3300 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5EA33EE7
+P 7650 2850
+F 0 "Y1" V 7604 2981 50  0000 L CNN
+F 1 "Crystal" V 7695 2981 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 7650 2850 50  0001 C CNN
+F 3 "~" H 7650 2850 50  0001 C CNN
+	1    7650 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EA34E59
+P 8150 2700
+F 0 "C1" V 7898 2700 50  0000 C CNN
+F 1 "C" V 7989 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8188 2550 50  0001 C CNN
+F 3 "~" H 8150 2700 50  0001 C CNN
+	1    8150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EA3546D
+P 8150 3000
+F 0 "C2" V 7898 3000 50  0000 C CNN
+F 1 "C" V 7989 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8188 2850 50  0001 C CNN
+F 3 "~" H 8150 3000 50  0001 C CNN
+	1    8150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EA35D1C
+P 6450 4800
+F 0 "#PWR0101" H 6450 4550 50  0001 C CNN
+F 1 "GND" H 6455 4627 50  0000 C CNN
+F 2 "" H 6450 4800 50  0001 C CNN
+F 3 "" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EA363CB
+P 8300 3000
+F 0 "#PWR0102" H 8300 2750 50  0001 C CNN
+F 1 "GND" H 8305 2827 50  0000 C CNN
+F 2 "" H 8300 3000 50  0001 C CNN
+F 3 "" H 8300 3000 50  0001 C CNN
+	1    8300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EA36871
+P 8300 2700
+F 0 "#PWR0103" H 8300 2450 50  0001 C CNN
+F 1 "GND" H 8305 2527 50  0000 C CNN
+F 2 "" H 8300 2700 50  0001 C CNN
+F 3 "" H 8300 2700 50  0001 C CNN
+	1    8300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3000 7650 3000
+Wire Wire Line
+	7650 2700 8000 2700
+Wire Wire Line
+	7650 2700 7050 2700
+Connection ~ 7650 2700
+Wire Wire Line
+	7050 2800 7500 2800
+Wire Wire Line
+	7500 2800 7500 3000
+Wire Wire Line
+	7500 3000 7650 3000
+Connection ~ 7650 3000
+Wire Wire Line
+	6450 1800 6500 1800
+$Comp
+L power:+5V #PWR0104
+U 1 1 5EA37590
+P 6500 1800
+F 0 "#PWR0104" H 6500 1650 50  0001 C CNN
+F 1 "+5V" H 6515 1973 50  0000 C CNN
+F 2 "" H 6500 1800 50  0001 C CNN
+F 3 "" H 6500 1800 50  0001 C CNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 1800
+Wire Wire Line
+	6500 1800 6550 1800
+$Comp
+L power:+5V #PWR0105
+U 1 1 5EA37B9D
+P 3050 2100
+F 0 "#PWR0105" H 3050 1950 50  0001 C CNN
+F 1 "+5V" H 3065 2273 50  0000 C CNN
+F 2 "" H 3050 2100 50  0001 C CNN
+F 3 "" H 3050 2100 50  0001 C CNN
+	1    3050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2500 3200 2100
+Wire Wire Line
+	3200 2100 3050 2100
+$Comp
+L power:GND #PWR0106
+U 1 1 5EA3858B
+P 3000 4700
+F 0 "#PWR0106" H 3000 4450 50  0001 C CNN
+F 1 "GND" H 3005 4527 50  0000 C CNN
+F 2 "" H 3000 4700 50  0001 C CNN
+F 3 "" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4600 3100 4600
+Wire Wire Line
+	3000 4600 2900 4600
+Connection ~ 3000 4600
+Wire Wire Line
+	3000 4600 3000 4700
+Text GLabel 2500 4200 0    50   Input ~ 0
+D13
+Text GLabel 2500 4100 0    50   Input ~ 0
+D12
+Text GLabel 2500 4000 0    50   Input ~ 0
+D11
+Text GLabel 2500 3900 0    50   Input ~ 0
+D10
+$Comp
+L Device:R R1
+U 1 1 5EA39800
+P 7350 3600
+F 0 "R1" V 7143 3600 50  0000 C CNN
+F 1 "R" V 7234 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7280 3600 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5EA3A01D
+P 7500 3600
+F 0 "#PWR0107" H 7500 3450 50  0001 C CNN
+F 1 "+5V" H 7515 3773 50  0000 C CNN
+F 2 "" H 7500 3600 50  0001 C CNN
+F 3 "" H 7500 3600 50  0001 C CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3600 7150 3600
+Text GLabel 7250 3700 2    50   Input ~ 0
+D10
+Wire Wire Line
+	7250 3700 7150 3700
+Wire Wire Line
+	7150 3700 7150 3600
+Connection ~ 7150 3600
+Wire Wire Line
+	7150 3600 7200 3600
+Text GLabel 7050 2600 2    50   Input ~ 0
+D13
+Text GLabel 7050 2500 2    50   Input ~ 0
+D12
+Text GLabel 7050 2400 2    50   Input ~ 0
+D11
+$EndSCHEMATC
